@@ -1,0 +1,55 @@
+.sidebar {
+  // width: 210px;
+  background-color: #ffffff;
+  color: #424040;
+  height: 100vh;
+  position: fixed;
+  top: 3rem;
+  border-right: 1px solid #dfd4d4;
+  left: 8.5rem;
+  padding-top: 60px; // Adjust according to navbar height
+  overflow-y: auto; // Enables scrollbar when content overflows
+  scrollbar-width: thin; // Firefox-specific to make the scrollbar thin
+  scrollbar-color: #7289da #f0f0f0; // Firefox-specific to style scrollbar
+  
+  // For Webkit browsers (Chrome, Safari)
+  &::-webkit-scrollbar {
+    width: 8px; // Adjust width of the scrollbar
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #7289da;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 5px;
+    margin-bottom: 1.5rem; // Adds space between groups
+
+    li {
+      padding: 0.3rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+      a {
+        text-decoration: none;
+        color: #464545;
+      }
+
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}

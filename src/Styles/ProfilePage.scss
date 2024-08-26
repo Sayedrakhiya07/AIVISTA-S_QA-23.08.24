@@ -1,0 +1,58 @@
+.ProfilePage-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  
+    .content-container {
+      display: flex;
+      flex: 1;
+      overflow: hidden; 
+  
+      .main-content {
+        flex: 1;
+        padding: 2rem;
+        overflow-y: auto;
+        max-width: 1260px;
+        margin-left: 22rem;
+        margin-top: 2rem;
+        // margin-right: 7rem;
+        background-color: #ffffff;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .profile-section, .saves-section, .settings-section, .Sidebaracticity-content {
+    flex: 1;
+  }
+  
+  .Sidebaracticity-content {
+    display: flex;
+  }
+  
+  .Sidebaracticity {
+    width: 200px;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .Sidebaracticity ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .Sidebaracticity li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .profile-options span {
+    cursor: pointer;
+    margin-right: 15px;
+    // color: #0073e6; 
+    // font-weight: bold;
+  }
+  

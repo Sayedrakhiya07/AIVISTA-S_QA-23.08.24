@@ -1,0 +1,154 @@
+//tania
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+    background: url('../Assets/images/351885.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .form-container {
+        background-color: #1c1c1c;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        // margin-top: 2rem;
+
+        // max-width: 400px;
+
+        h2 {
+            color: #fff;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        label {
+            color: grey;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 10px;
+            font-weight: bold;
+            position: relative;
+            bottom: 8px;
+            margin-left: 1.5rem;
+        }
+
+
+        input,
+        select {
+            width: 82%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            border: none;
+            /* font-size: 1rem; */
+            margin-left: 1.5rem;
+
+        }
+
+        button {
+
+            width: 89%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+            margin-left: 1.5rem;
+        }
+
+        .required {
+            color: red;
+            // margin-right: 18rem;
+        }
+
+
+        input,
+        select {
+            background-color: #23272a;
+            color: #fff;
+        }
+
+        button {
+            background-color: #607cdf;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken(#7289da, 10%);
+            }
+
+            &:active {
+                background-color: lighten(#7289da, 10%);
+            }
+        }
+        .other{
+            background-color: rgb(192, 229, 247);
+            color: #1c1c1c;
+        }
+        p {
+            color: #b9bbbe;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: small;
+
+            a {
+                color: #7289da;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .dob-container {
+            display: flex;
+            justify-content: space-between;
+
+            select {
+                flex: 1;
+                margin-right: 0.5rem;
+                font-size: small;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+// Responsive Design
+@media only screen and (max-width: 1200px) {
+    .form-container {
+        max-width: 350px;
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .form-container {
+        max-width: 300px;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .form-container {
+        max-width: 100%;
+        padding: 0.75rem;
+        border-radius: 5px;
+
+        input,
+        select,
+        button {
+            font-size: 0.875rem;
+            padding: 0.5rem;
+        }
+    }
+}

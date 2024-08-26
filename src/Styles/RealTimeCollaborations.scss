@@ -1,0 +1,105 @@
+.discussion-section {
+  font-size: 0.8rem;
+}
+.discussion-header {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+.dis-txt {
+  display: flex;
+  align-items: center;
+}
+.dis-count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dis-count p{
+    font-size: 1.2rem;
+}
+.filter{
+    display: flex;
+    flex-direction: row;
+    gap:.3rem;
+    align-items: center;
+
+}
+// .filter:nth-child(3),.filter:nth-child(4){
+//     padding: .3rem .7rem;
+//     background: green;
+// }
+.filter span input, .filter span select{
+    padding: .4rem .7rem;
+}
+
+.diss-item {
+  display: flex;
+  border-bottom: 1px solid black;
+  align-items: center;
+  //   background: rgb(216, 155, 155);
+  text-align: left;
+  padding: 0.4rem 0.9rem;
+  justify-content: space-between;
+}
+
+.dis-txt-item {
+  // background: yellow;
+  text-align: left;
+  width: 90%;
+}
+.user-time-techs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.start-dis-btn {
+  width: 25%;
+}
+.start-dis-btn button {
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 0.7rem;
+  background: rgb(75, 165, 248);
+}
+
+a {
+  color: rgb(75, 165, 248);
+}
+
+.dis-txt-item h3 a {
+  text-decoration: none;
+}
+.counter-item {
+  //   width: 20%;
+  //   background:rgb(139, 200, 139);
+}
+
+// .techs {
+// }
+
+.techs {
+  display: flex;
+  gap: 0.5rem;
+}
+.tag-item {
+  color: black;
+  background: rgb(240, 238, 238);
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.2rem;
+}
+.user-details-time {
+  display: flex;
+  gap: 0.4rem;
+}
+.askedBy {
+  color: rgb(75, 165, 248);
+}
+.timeAgo {
+  color: rgb(138, 135, 135);
+}
